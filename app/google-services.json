@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "945925191534",
+    "project_id": "triplet-app-595b7",
+    "storage_bucket": "triplet-app-595b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945925191534:android:1f670e499672b08786337f",
+        "android_client_info": {
+          "package_name": "com.majorproject.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "945925191534-ts7jnln1gt4mlim8v9lcp0spr634dijo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCww-ZzuHTaViOde1V4mmYCMH2L1KSVAUE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "945925191534-ts7jnln1gt4mlim8v9lcp0spr634dijo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

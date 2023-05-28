@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mapmodule.TripSettings">
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="0dp"
+        android:text="Set Coordinates"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview1"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="303dp"
+        android:text="Source"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/SOURCE"
+        android:layout_width="369dp"
+        android:layout_height="50dp"
+
+        android:layout_below="@+id/textview2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/inputs"
+        android:paddingLeft="10dp"
+        android:textColor="#000">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="145dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/SOURCE"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="244dp"
+        android:text="Destination"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/DESTINATION"
+        android:layout_width="369dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textview3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/inputs"
+        android:paddingLeft="10dp"
+        android:textColor="#000">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/SET"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DESTINATION"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="128dp"
+        android:text="SET Trip"
+        android:textColor="#fff"
+        android:background="@drawable/buttons">
+
+    </Button>
+
+</RelativeLayout>

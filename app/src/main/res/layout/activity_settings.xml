@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+    <com.google.android.material.appbar.AppBarLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/appBarLayout"
+        >
+
+        <include
+            android:id="@+id/setting_bar_layout"
+            layout="@layout/app_bar_layout">
+        </include>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    1
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="81dp"
+        android:src="@drawable/img"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="2dp" />
+
+    <EditText
+        android:id="@+id/set_user_name"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/inputs"
+        android:hint="username"
+        android:inputType="textMultiLine"
+        android:padding="16sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+
+
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/set_profile_status"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_user_name"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/inputs"
+        android:hint="Hey! i am available....."
+        android:inputType="textMultiLine"
+        android:padding="16sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+
+
+        />
+
+    <Button
+        android:id="@+id/update_settings_button"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_profile_status"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/buttons"
+        android:padding="16sp"
+        android:text="Update"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+
+
+        android:textStyle="bold" />
+
+</RelativeLayout>

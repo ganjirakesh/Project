@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Project</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_live_location_tracking">LiveLocationTracking</string>
+    <string name="title_activity_private_chat_maps">PrivateChatMapsActivity</string>
+    <string name="Maps_api_key">AIzaSyAvTmnH_xtxX_2QgXLftqVcoiXurHy1BrE</string>
+</resources>

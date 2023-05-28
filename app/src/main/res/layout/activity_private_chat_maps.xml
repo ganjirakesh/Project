@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".privatechat.PrivateChatMapsActivity">
+
+    <fragment
+        android:id="@+id/PrivateMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp">
+
+    </fragment>
+
+
+    <Button
+        android:id="@+id/distanceFinder"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PrivateMap"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="4dp"
+        android:text="distance  "
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.01"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/PrivateMap">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/DistanceMeasure"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/PrivateMap"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        android:layout_toEndOf="@+id/distanceFinder"
+        android:paddingLeft="20sp"
+        android:paddingTop="2sp"
+        android:textSize="30sp"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.971"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/PrivateMap">
+
+    </TextView>
+
+    <ListView
+        android:id="@+id/Private_Chat_list"
+        android:layout_width="241dp"
+        android:layout_height="261dp"
+
+        android:layout_below="@+id/distanceFinder"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="4dp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.031"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/DistanceMeasure"
+        map:layout_constraintVertical_bias="0.777">
+
+
+    </ListView>
+
+
+    <ListView
+        android:id="@+id/names_list"
+        android:layout_width="168dp"
+        android:layout_height="250dp"
+
+        android:layout_below="@+id/distanceFinder"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="243dp"
+
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="8dp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.031"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/DistanceMeasure"
+        map:layout_constraintVertical_bias="0.777">
+
+
+    </ListView>
+
+
+</RelativeLayout>
+
+
+
+
+
